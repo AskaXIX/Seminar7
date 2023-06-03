@@ -10,61 +10,6 @@
 
 // 17 -> такого числа в массиве нет
 
-// int ReadInt(string text)
-// {
-//     System.Console.Write(text);
-//     return Convert.ToInt32(System.Console.ReadLine());
-// }
-
-// int[,] FillMatrix(int row, int col, int leftRange, int rightRange)
-// {
-//     int[,] matrix = new int[row, col];
-//     Random rand = new Random();
-
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//         {
-//             matrix[i, j] = rand.Next(leftRange, rightRange + 1);
-//         }
-//     }
-
-//     return matrix;
-// }
-
-// void PrintMatrix(int[,] matrix)
-// {
-//     for (int i = 0; i < matrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < matrix.GetLength(1); j++)
-//         {
-//             System.Console.Write(matrix[i, j] + "\t");
-//         }
-//         System.Console.WriteLine();
-//     }
-// }
-
-// void FindNumber(int[,] newmatrix, int a, int b)
-// {
-//     for (int i = 0; i < newmatrix.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < newmatrix.GetLength(1); j++)
-//         {
-//             if (a == i && b == j)
-//             {
-//                 System.Console.Write(newmatrix[i, j]);
-//             }
-//             else if (a != i && b != j)
-//             {
-//                 System.Console.Write("Error");
-//             }
-//         }
-//     }
-// }
-
-// int[,] matrix = FillMatrix(ReadInt("Insert number row: "), ReadInt("Insert number col: "), 0, 99);
-// PrintMatrix(matrix);
-// FindNumber()
 
 Console.Write("Введите размер m: ");
 int m = Convert.ToInt32(Console.ReadLine());
@@ -88,7 +33,7 @@ void numb(int m, int n)
     for (i = 0; i < m; i++)
     {
         Console.WriteLine();
-        
+
         for (j = 0; j < n; j++)
         {
             randomArray[i, j] = rand.NextDouble();
