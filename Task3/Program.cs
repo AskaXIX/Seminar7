@@ -34,7 +34,7 @@ void numb(int m, int n)
 
 void Arif(int m, int n)
 {
-    Console.Write("Среднее арифметическое каждого столбца: ");
+    Console.Write("Среднее арифметическое: ");
     int i, j;
     Random rand = new Random();
     for (j = 0; j < n; j++)
